@@ -14,6 +14,7 @@ scrol.addEventListener("mousedown", (e) => {
 
 scrol.addEventListener("mouseup", (e) => {
     isDragging = false;
+    
     console.log("mouseup");
 })
 
