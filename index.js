@@ -14,6 +14,7 @@ scrol.addEventListener("mousedown", (e) => {
 
 scrol.addEventListener("mouseup", (e) => {
     isDragging = false;
+    
     console.log("mouseup");
 })
 
@@ -25,6 +26,7 @@ scrol.addEventListener("mouseleav", (e) => {
 scrol.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
     e.preventDefault();
+    
 
     const x = e.pageX - scrol.offsetLeft;
     const distance = x - startX;
